@@ -157,19 +157,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
           </p>
         </div>
 
-        {/* Demo Accounts Info */}
-        {!isSignUp && (
-          <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-xl">
-            <h4 className="font-semibold text-blue-900 mb-2">Demo Accounts:</h4>
-            <div className="text-xs text-blue-700 space-y-1">
-              <div>Consumer: john@consumer.com / password123</div>
-              <div>Vehicle Owner: mike@vehicles.com / password123</div>
-              <div>Material Supplier: sarah@materials.com / password123</div>
-              <div>Admin: admin@autox.lk / admin123</div>
-            </div>
-          </div>
-        )}
-
         {/* Error Message */}
         {error && (
           <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl">
